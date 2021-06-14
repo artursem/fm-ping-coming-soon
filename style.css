@@ -18,7 +18,6 @@ body {
 
 /* ############# */
 div, header, footer, form {
-  border: 1px dashed teal;
   text-align: center;
 }
 
@@ -54,31 +53,36 @@ header img {
   margin: 0 5rem 0 5rem;
   display: flex;
 }
-.notify input {
+.notify .input-block {
+  padding: 0;
+}
+.notify .input-block input {
+  width: 100%;
   line-height: 2.5rem;
   border: 1px solid #c2d3ff;
   border-radius: 1.5rem;
   padding: 0.3rem 1rem 0.3rem 2rem;
   font-size: 0.9rem;
   box-shadow: 0.5rem 0.5rem 1rem 0 rgba(194, 211, 255, 0.4);
-  margin: 0.3rem;
+  margin: 1rem 0 1rem 0;
 }
-.notify input:focus {
+.notify .input-block input:focus {
   color: #151f29;
 }
-.notify input::-webkit-input-placeholder {
+.notify .input-block input::-webkit-input-placeholder {
   color: #c2d3ff;
 }
-.notify input.error {
+.notify .input-block input.error {
   border: 1px solid #ff5263;
 }
-.notify .error-message {
+.notify .input-block .error-message {
   display: none;
   color: #ff5263;
   font-size: 0.8rem;
   padding-top: 0.5rem;
+  padding-left: 2rem;
 }
-.notify button {
+.notify .button-block button {
   margin: 1rem 0.3rem 1rem 0.3rem;
   width: 100%;
   height: 51px;
@@ -91,7 +95,7 @@ header img {
   box-shadow: 0.5rem 0.5rem 1rem 0 rgba(194, 211, 255, 0.4);
   cursor: pointer;
 }
-.notify button:hover {
+.notify .button-block button:hover {
   color: #c2d3ff;
   box-shadow: 0.5rem 0.5rem 2rem 0 rgba(194, 211, 255, 0.4);
 }
@@ -124,23 +128,23 @@ footer i:hover {
   .notify {
     flex-direction: column;
   }
-  .notify input {
-    width: 100%;
-  }
-  .notify button {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 601px) {
   .notify {
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: center;
   }
-  .notify input {
-    width: 70%;
+
+  .input-block {
+    flex: 7;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .notify button {
-    width: 30%;
+
+  .button-block {
+    flex: 3;
   }
 }
 

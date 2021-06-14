@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+  color: #151f29;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+/* ############# */
+div, header, footer {
+  text-align: center;
+}
+
+header {
+  padding: 2rem;
+}
+header img {
+  width: 90px;
+  height: auto;
+}
+
+.info h1 {
+  font-weight: 200;
+  color: #969696;
+  padding: 1rem;
+}
+.info h1 b {
+  color: #151f29;
+}
+
+.info p {
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+
+.image img {
+  width: 90%;
+}
+
+.notify {
+  padding: 2rem;
+  margin: 0 5rem 0 5rem;
+  display: flex;
+  flex-direction: column;
+  /* ##################### */
+}
+.notify input {
+  line-height: 2.5rem;
+  border: 1px solid #c2d3ff;
+  border-radius: 1.5rem;
+  padding: 0.3rem 1rem 0.3rem 2rem;
+  font-size: 0.9rem;
+  box-shadow: 0.5rem 0.5rem 1rem 0 rgba(194, 211, 255, 0.4);
+}
+.notify input:focus {
+  color: #151f29;
+}
+.notify input::-webkit-input-placeholder {
+  color: #c2d3ff;
+}
+.notify input.error {
+  border: 1px solid #ff5263;
+}
+.notify .error-message {
+  display: none;
+  color: #ff5263;
+  font-size: 0.8rem;
+  padding-top: 0.5rem;
+}
+.notify button {
+  margin: 1rem 0 1rem 0;
+  width: 100%;
+  height: 51px;
+  background: #4f7df3;
+  border: none;
+  border-radius: 1.5rem;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: 600;
+  box-shadow: 0.5rem 0.5rem 1rem 0 rgba(194, 211, 255, 0.4);
+  cursor: pointer;
+}
+.notify button:hover {
+  color: #c2d3ff;
+  box-shadow: 0.5rem 0.5rem 2rem 0 rgba(194, 211, 255, 0.4);
+}
+
+footer {
+  font-size: 0.9rem;
+  color: #969696;
+}
+footer i {
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
+  padding: 9px 0 10px 0;
+  margin: 1rem;
+  color: #4f7df3;
+  border: 1px solid #c2d3ff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+footer i:hover {
+  border: solid 1px #4f7df3;
+}
+
+/*# sourceMappingURL=style.css.map */

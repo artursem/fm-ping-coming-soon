@@ -17,7 +17,8 @@ body {
 }
 
 /* ############# */
-div, header, footer {
+div, header, footer, form {
+  border: 1px dashed teal;
   text-align: center;
 }
 
@@ -52,8 +53,6 @@ header img {
   padding: 2rem;
   margin: 0 5rem 0 5rem;
   display: flex;
-  flex-direction: column;
-  /* ##################### */
 }
 .notify input {
   line-height: 2.5rem;
@@ -62,6 +61,7 @@ header img {
   padding: 0.3rem 1rem 0.3rem 2rem;
   font-size: 0.9rem;
   box-shadow: 0.5rem 0.5rem 1rem 0 rgba(194, 211, 255, 0.4);
+  margin: 0.3rem;
 }
 .notify input:focus {
   color: #151f29;
@@ -79,7 +79,7 @@ header img {
   padding-top: 0.5rem;
 }
 .notify button {
-  margin: 1rem 0 1rem 0;
+  margin: 1rem 0.3rem 1rem 0.3rem;
   width: 100%;
   height: 51px;
   background: #4f7df3;
@@ -97,14 +97,15 @@ header img {
 }
 
 footer {
+  margin-top: 2rem;
   font-size: 0.9rem;
   color: #969696;
 }
 footer i {
-  font-size: 1.8rem;
+  font-size: 1.2rem;
   width: 3rem;
   height: 3rem;
-  padding: 9px 0 10px 0;
+  padding: 13px 0 10px 0;
   margin: 1rem;
   color: #4f7df3;
   border: 1px solid #c2d3ff;
@@ -117,6 +118,30 @@ footer i {
 }
 footer i:hover {
   border: solid 1px #4f7df3;
+}
+
+@media screen and (max-width: 600px) {
+  .notify {
+    flex-direction: column;
+  }
+  .notify input {
+    width: 100%;
+  }
+  .notify button {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 601px) {
+  .notify {
+    flex-direction: row;
+    align-items: center;
+  }
+  .notify input {
+    width: 70%;
+  }
+  .notify button {
+    width: 30%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
